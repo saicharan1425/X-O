@@ -1,16 +1,20 @@
 
 import './App.css'
+import { Dashboard } from './Dashboard'
 import { UserContext } from './UserContext'
 
 function App() {
- 
+  const user={
+    name:'Charan',
+    role:'dev',
+  }
 
   return (
-    <>
-      <UserContext>
-
-      </UserContext>
-    </>
+    
+      <UserContext value={user}>
+      <Dashboard />
+   </UserContext>
+  
   )
 }
 

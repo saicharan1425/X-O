@@ -1,5 +1,3 @@
 import { createContext } from "react";
 
-export const UserContext = () =>{
-    createContext({name: 'Guest'})
-}
+export const UserContext = createContext()
