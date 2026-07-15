@@ -3,11 +3,18 @@ import { UserContext } from "./UserContext"
 
 export const User = () =>{
 
-   const userd =  useContext(UserContext)
+   const {user,setUser} =  useContext(UserContext)
+
+   function onChangee(){
+
+    setUser({...user, theme: user.theme === 'dark' ? 'light' : 'dark'}  )
+   }
 
     return(
         <>
-        <p>User: {userd.name}</p>
+        <p>User: {user.name}</p>
+        <p>theme:{user.theme}</p>
+        <button onClick={onChangee}>Change name</button>
         </>
     )
 }

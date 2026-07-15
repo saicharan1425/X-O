@@ -1,19 +1,20 @@
 
+
 import './App.css'
 import { Dashboard } from './Dashboard'
-import { UserContext } from './UserContext'
+
+import { PropDrill } from './PropDrill';
 
 function App() {
-  const user={
-    name:'Charan',
-    role:'dev',
-  }
+
+  
+
 
   return (
     
-      <UserContext value={user}>
+      <PropDrill>
       <Dashboard />
-   </UserContext>
+    </PropDrill>
   
   )
 }
