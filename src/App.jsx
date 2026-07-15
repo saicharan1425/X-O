@@ -1,9 +1,8 @@
 
 
 import './App.css'
-import { Dashboard } from './Dashboard'
+import { StopWatch } from './StopWatch'
 
-import { PropDrill } from './PropDrill';
 
 function App() {
 
@@ -12,9 +11,7 @@ function App() {
 
   return (
     
-      <PropDrill>
-      <Dashboard />
-    </PropDrill>
+      <StopWatch></StopWatch>
   
   )
 }
