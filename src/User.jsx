@@ -1,9 +1,9 @@
-import { useContext } from "react"
+import { use } from "react"
 import { UserContext } from "./UserContext"
 
 export const User = () =>{
 
-   const {user,setUser} =  useContext(UserContext)
+   const {user,setUser} =  use(UserContext)
 
    function onChangee(){
 
