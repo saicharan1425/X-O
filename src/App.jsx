@@ -1,16 +1,18 @@
 
+
 import './App.css'
-import { UserContext } from './UserContext'
+import { StopWatch } from './StopWatch'
+
 
 function App() {
- 
+
+  
+
 
   return (
-    <>
-      <UserContext>
-
-      </UserContext>
-    </>
+    
+      <StopWatch></StopWatch>
+  
   )
 }
 
